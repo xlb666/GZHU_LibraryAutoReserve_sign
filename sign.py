@@ -16,8 +16,8 @@ def main(*args, **kwargs):
             yy.sign(stu['devName'])
         except Exception as e:
             print(e)
-            # if stu['pushplus']:
-            #     yy.pushplus(f"{stu['name']} {stu['devName']} 签到失败", e)
+            if stu['pushplus']:
+                yy.pushplus(f"{stu['name']} {stu['devName']} 签到失败", e)
             continue
 
 
