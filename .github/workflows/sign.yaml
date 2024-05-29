@@ -1,14 +1,14 @@
 name: sign
 
-on:
-  schedule:  # 开启定时需要把这几前面的“#”删掉
-    - cron: '30 5 * * *'     #运行的时间，时区问题实际运行+8h
-    - cron: '35 5 * * *'
-    - cron: '40 5 * * *'
-    - cron: '35 9 * * *'
-    - cron: '40 9 * * *'
-    - cron: '45 9 * * *'
-  workflow_dispatch:
+# on:
+#   schedule:  # 开启定时需要把这几前面的“#”删掉
+#     - cron: '30 5 * * *'     #运行的时间，时区问题实际运行+8h
+#     - cron: '35 5 * * *'
+#     - cron: '40 5 * * *'
+#     - cron: '35 9 * * *'
+#     - cron: '40 9 * * *'
+#     - cron: '45 9 * * *'
+#   workflow_dispatch:
 
 jobs:
   sign:
