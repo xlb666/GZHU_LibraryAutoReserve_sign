@@ -11,9 +11,10 @@ def main(*args, **kwargs):
         try:
             # 初初始化类示例，传入昵称、用户名、密码、时间段、推送token（推送可以为空）
             yy = ZWYT(stu['name'], stu['sno'], stu['pwd'], stu['periods'], stu['pushplus'])
-
+            print(1)
             # 调用签到函数进行签到，传入预约座位号
             yy.sign(stu['devName'])
+            print(2)
         except Exception as e:
             print("签到失败")
             print(e)
