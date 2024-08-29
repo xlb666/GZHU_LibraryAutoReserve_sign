@@ -15,6 +15,7 @@ def main(*args, **kwargs):
             # 调用签到函数进行签到，传入预约座位号
             yy.sign(stu['devName'])
         except Exception as e:
+            print("签到失败")
             print(e)
             # if stu['pushplus']:
             #     yy.pushplus(f"{stu['name']} {stu['devName']} 签到失败", e)
