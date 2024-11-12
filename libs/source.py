@@ -329,7 +329,7 @@ class ZWYT(object):
 
             # 预约失败---可选择向微信推送预约失败的信息, 比如可以使用 pushplus 平台
             else:
-                logger.error(f"{self.name} 时间段: {json_data['resvBeginTime']} 预约失败 {message}")
+                logger.error(f"{self.name} 时间段: {json_data['resvBeginTime']} 预约{devName}失败 {message}")
 
     # 签到
     def sign(self, devName: str):
