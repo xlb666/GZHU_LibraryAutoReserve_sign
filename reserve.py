@@ -1,11 +1,12 @@
 """
 预约
 """
+from apscheduler.schedulers.blocking import BlockingScheduler
 from libs.info import infos
 from libs.source import ZWYT
 
 
-def main(*args, **kwargs):
+def order():
     # 遍历 info 信息，获取每个用户的昵称、预约座位号、用户名、密码、时间段、推送token（推送可以为空）
     for stu in infos:
         try:
@@ -20,7 +21,3 @@ def main(*args, **kwargs):
             # if stu['pushplus']:
             #     yy.pushplus(f"{stu['name']} {stu['devName']} 预约失败", e)
             continue
-
-
-if __name__ == '__main__':
-    main()
