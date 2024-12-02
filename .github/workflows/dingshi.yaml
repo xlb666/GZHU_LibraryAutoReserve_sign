@@ -1,7 +1,6 @@
 name: ding_shi_ren_wu
 on:
-  #schedule:
-      每天早上六点，在这一个小时内每5分钟触发一次
+  schedule:
     - cron: '0/5 21-23 * * *'
 
 
